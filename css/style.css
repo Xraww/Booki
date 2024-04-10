@@ -30,20 +30,26 @@ body {
     box-sizing: border-box;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 a {
     color: inherit;
     text-decoration: none;
 }
 
-/* Header */
+/****** Header ***********/
 header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 35px; /* to replace to gap when flexbox */
+    margin-bottom: 35px;
 }
 
 .logo {
-    padding: 30px 0 30px 0;
+    padding-top: 30px;
 
     img {
         width: 61px;
@@ -57,7 +63,6 @@ header {
     list-style: none;
 
     height: 35px;
-    /* border: 1px solid blue; */
 }
 
 .links {
@@ -66,10 +71,83 @@ header {
 }
 
 .links:hover {
-    color: #0065FC;
-    border-top-color: #0065FC;
+    color: var(--main-color);
+    border-top-color: var(--main-color);
 }
-/* Fin Header */
+
+/****** Home & Filters ***********/
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.title {
+    p {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+.searchForm {
+    display: flex;
+
+    #icon-loc {
+        background-color: var(--main-bg-color);
+        padding: 17px 19px;
+        border-radius: 15px 0 0 15px;
+
+        i {
+            color: black;
+        }
+    }
+
+    #location {
+        border-top: 1px solid var(--main-bg-color);
+        border-bottom: 1px solid var(--main-bg-color);
+        border-left: none;
+        border-right: none;
+        
+        color: black;
+        text-align: center;
+    }
+
+    #location:focus {
+        outline: none;
+    }
+
+    #location::placeholder {
+        color: black;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    #searchBtn {
+        border: none;
+        border-radius: 0 15px 15px 0;
+        cursor: pointer;
+        padding: 15px 16px;
+
+        color: white;
+        background-color: var(--main-color);
+    }
+}
+
+.filters {
+
+}
+
+.info {
+    font-size: 16px;
+    /* margin-bottom: 50px; */
+}
+
+/****** Autres ***********/
 
 .section-title {
     margin: 0;
@@ -91,8 +169,12 @@ header {
     font-size: 16px;
 }
 
-.euro {
+.weight700 {
     font-weight: 700;
+}
+
+.fontSize18 {
+    font-size: 18px;
 }
 
 .neutral-star {
