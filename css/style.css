@@ -50,11 +50,11 @@ header {
 
 .logo {
     padding-top: 30px;
+}
 
-    img {
-        width: 61px;
-        height: 19px;
-    }
+.logo img {
+    width: 61px;
+    height: 19px;
 }
 
 .navlinks {
@@ -82,64 +82,83 @@ header {
     gap: 35px;
 }
 
-.title {
-    p {
-        font-size: 16px;
-        margin-top: 8px;
-    }
+.title p {
+    font-size: 16px;
+    margin-top: 8px;
+}
 
-    h1 {
-        font-size: 22px;
-    }
+h1 {
+    font-size: 22px;
 }
 
 .searchForm {
     display: flex;
+}
 
-    #icon-loc {
-        background-color: var(--main-bg-color);
-        padding: 17px 19px;
-        border-radius: 15px 0 0 15px;
+#locationIcon {
+    background-color: var(--main-bg-color);
+    padding: 17px 19px;
+    border-radius: 15px 0 0 15px;
+}
 
-        i {
-            color: black;
-        }
-    }
+#locationIcon i {
+    color: black;
+}
 
-    #location {
-        border-top: 1px solid var(--main-bg-color);
-        border-bottom: 1px solid var(--main-bg-color);
-        border-left: none;
-        border-right: none;
-        
-        color: black;
-        text-align: center;
-    }
+#location {
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
+    border-left: none;
+    border-right: none;
+    
+    color: black;
+    text-align: center;
+}
 
-    #location:focus {
-        outline: none;
-    }
+#location:focus {
+    outline: none;
+}
 
-    #location::placeholder {
-        color: black;
-        text-align: center;
-        font-size: 18px;
-        font-weight: 700;
-    }
+#location::placeholder {
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
 
-    #searchBtn {
-        border: none;
-        border-radius: 0 15px 15px 0;
-        cursor: pointer;
-        padding: 15px 16px;
+#searchBtn {
+    border: none;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    padding: 15px 16px;
 
-        color: white;
-        background-color: var(--main-color);
-    }
+    color: white;
+    background-color: var(--main-color);
 }
 
 .filters {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    height: 50px;
+}
 
+.filters-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 100%;
+    font-size: 17px;
+    padding: 4px 19px;
+    background-color: white;
+
+    border-radius: 25px;
+    border: 2px solid var(--main-bg-color);
+}
+
+.filters-buttons:hover {
+    cursor: pointer;
+    background-color: var(--filter-bg-color);
 }
 
 .info {
@@ -150,7 +169,6 @@ header {
 /****** Autres ***********/
 
 .section-title {
-    margin: 0;
     font-size: 22px;
 }
 
@@ -197,6 +215,36 @@ header {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 240px;
+}
+
+.hebergements-cards img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 124px;
+}
+
+.hebergements-cards .card-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 15px;
+    margin-bottom: 8px;
 }
 
 /****** Populaires ***********/
