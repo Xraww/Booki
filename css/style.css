@@ -41,6 +41,11 @@ a {
     text-decoration: none;
 }
 
+.anchor-width {
+    display: inline-block;
+    max-width: fit-content;
+}
+
 /****** Header ***********/
 header {
     display: flex;
@@ -91,17 +96,17 @@ h1 {
     font-size: 22px;
 }
 
-.searchForm {
+.search-form {
     display: flex;
 }
 
-#locationIcon {
+#location-icon {
     background-color: var(--main-bg-color);
     padding: 17px 19px;
     border-radius: 15px 0 0 15px;
 }
 
-#locationIcon i {
+#location-icon i {
     color: black;
 }
 
@@ -126,7 +131,7 @@ h1 {
     font-weight: 700;
 }
 
-#searchBtn {
+#search-btn {
     border: none;
     border-radius: 0 15px 15px 0;
     cursor: pointer;
@@ -163,7 +168,6 @@ h1 {
 
 .info {
     font-size: 16px;
-    /* margin-bottom: 50px; */
 }
 
 /****** Autres ***********/
@@ -187,11 +191,11 @@ h1 {
     font-size: 16px;
 }
 
-.weight700 {
+.weight-700 {
     font-weight: 700;
 }
 
-.fontSize18 {
+.font-size-18 {
     font-size: 18px;
 }
 
@@ -235,7 +239,7 @@ h1 {
 
 .hebergements-cards img {
     border-radius: 20px 20px 0 0;
-    width: 100%;
+    /* width: 100%; */
     height: 124px;
 }
 
@@ -292,7 +296,7 @@ h1 {
     margin-bottom: 5px;
 }
 
-/****** Activites ***********/
+/****** Activités ***********/
 .activities {
     display: flex;
     flex-direction: column;
@@ -302,28 +306,30 @@ h1 {
 
 .activities-cards {
     display: flex;
-    justify-content: center;
     gap: 30px;
 }
 
 .activities-cards .card {
     display: flex;
     flex-direction: column;
-    width: 295px;
-    height: 440px;
     padding: 0;
     filter: none;
     box-shadow: 0px 3px 15px 0px #0000001A;
+    height: 100%;
 }
 
-.activities-cards .card img {
-    width: 100%;
-    height: 85%;
+.activities-cards a {
+    width: 25%;
+}
+
+.activities-cards img {
     border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 380px;
 }
 
-.activities-cards .card h3 {
-    padding: 20px 19px 20px 19px;
+.activities-cards h3 {
+    padding: 20px 19px;
 }
 
 /****** Footer ***********/
@@ -331,8 +337,6 @@ footer {
     background-color: var(--main-bg-color);
     display: flex;
     width: 100%;
-
-    /* border: 1px solid blue;  */
 }
 
 footer .block {
@@ -340,10 +344,7 @@ footer .block {
     flex-direction: column;
     gap: 15px;
     width: 33.33%;
-
     padding: 20px;
-
-    /* border: 1px solid red; */
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
