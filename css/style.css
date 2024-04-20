@@ -352,14 +352,14 @@ h1 {
 }
 
 /****** Footer ***********/
-footer {
+.footer {
     background-color: var(--main-bg-color);
     display: flex;
     gap: 50px;
     width: 100%;
 }
 
-footer .block {
+.footer .block {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -509,12 +509,12 @@ footer .block {
         width: 100%;
     }
 
-    footer {
+    .footer {
         padding: 30px 0;
         flex-direction: column;
     }
 
-    footer .block {
+    .footer .block {
         width: 60%;
         padding: 0 0 0 30px;
     }
