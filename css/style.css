@@ -454,6 +454,10 @@ h1 {
         padding: 0 20px;
     }
 
+    #location {
+        width: 100%;
+    }
+
     #search-btn {
         display: none;
     }
@@ -468,7 +472,8 @@ h1 {
 
     .filters-button {
         height: 50px;
-        flex: 1 1 calc(50% - 20px);
+        justify-content: center;
+        width: calc((100% - 10px) / 2);
     }
 
     .filters-button span {
